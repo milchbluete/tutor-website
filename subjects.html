@@ -3,44 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subjects - Private Tutoring</title>
+  <title>Subjects | Private Tutor</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="hero">
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="subjects.html">Subjects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="hero" style="background-image: url('images/subjects-hero.jpg');">
+    <div class="hero-content">
       <h1>Subjects</h1>
+      <p>Explore what I teach</p>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="subjects.html">Subjects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <h2>Art</h2>
-    <img src="art-tutoring.jpg" alt="Art tutoring and creative expression lessons" class="page-image">
-    <p>Develop your creativity and technique through personalized art lessons.</p>
-
-    <h2>Biology and Chemistry</h2>
-    <img src="biology-chemistry.jpg" alt="Biology and chemistry tutoring with lab experiments and exam preparation" class="page-image">
-    <p>Biology and Chemistry topics, lab work, and exam prep.</p>
-
-    <h2>Life</h2>
-    <img src="life-sciences.jpg" alt="Life sciences tutoring with experiments and real-world applications" class="page-image">
-    <p>Life science experiments and principles.</p>
-
-    <h2>Poetry</h2>
-    <img src="poetry-tutoring.jpg" alt="Poetry tutoring and creative writing lessons" class="page-image">
-    <p>Explore poetry and creative writing to improve expression and style.</p>
+    <section class="content-section">
+      <h2>Areas of Focus</h2>
+      <div class="subjects-grid">
+        <div class="subject-card">
+          <img src="images/biology.jpg" alt="Biology and Chemistry">
+          <h3>Biology &amp; Chemistry</h3>
+          <p>Foundational concepts, exam prep, and applied science tutoring.</p>
+        </div>
+        <div class="subject-card">
+          <img src="images/life.jpg" alt="Life Sciences">
+          <h3>Life</h3>
+          <p>Ecology, evolution, and the study of living systems.</p>
+        </div>
+        <div class="subject-card">
+          <img src="images/art.jpg" alt="Art">
+          <h3>Art</h3>
+          <p>Developing creativity, technique, and personal expression.</p>
+        </div>
+        <div class="subject-card">
+          <img src="images/poetry.jpg" alt="Poetry">
+          <h3>Poetry</h3>
+          <p>Exploring language, rhythm, and meaning in written expression.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Private Tutor. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
