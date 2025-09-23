@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Private Tutor</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Private Tutor</title>
 
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
-        integrity="sha512-RXf+QSDCUQs0Xh+0Xh6X5b1a0+1wq1/c2U2Jq9L1G5DkI3E5+nF1pB1fq5DpPj+szCW0VfJtO2VtJ7uHh+LgHg==" 
+  <!-- Your site styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome (for social icons) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-RXf+QSDCUQs0Xh+0Xh6X5b1a0+1wq1/c2U2Jq9L1G5DkI3E5+nF1pB1fq5DpPj+szCW0VfJtO2VtJ7uHh+LgHg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Header (same hero style as index via style.css) -->
+  <header>
+    <h1>Contact</h1>
+    <p>Let’s connect and start learning</p>
+  </header>
+
+  <!-- Top navigation (same as index) -->
   <nav>
     <a href="index.html">Home</a>
-    <a href="subjects.html">Subjects</a>
     <a href="about.html">About</a>
+    <a href="subjects.html">Subjects</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Hero Banner -->
-  <header class="hero" style="background-image: url('images/contact-hero.jpg');">
-    <h1>Contact Me</h1>
-  </header>
-
-  <!-- Main Content -->
+  <!-- Main content card -->
   <main>
-    <h2>Get in Touch</h2>
-    <p>If you’d like to learn more or schedule a lesson, please reach out!</p>
+    <h2>Get in touch</h2>
+    <p>If you’d like to learn more or schedule a lesson, send a message below — I’ll reply as soon as I can.</p>
 
     <!-- Two-column layout -->
     <div class="contact-grid">
-      <!-- Left: Form -->
-      <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+      <!-- Left column: Form -->
+      <form class="contact-form">
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="6" required></textarea><br /><br />
 
         <button type="submit">Send</button>
       </form>
 
-      <!-- Right: Image -->
+      <!-- Right column: Image (matches form height) -->
       <div class="contact-image">
-        <img src="contact-profile.jpg" alt="Tutor profile" />
+        <!-- Put your image file in the SAME FOLDER as this HTML and update the filename if needed -->
+        <img src="contact.jpg" alt="Tutor portrait" />
       </div>
     </div>
 
-    <!-- Social links row under both -->
+    <!-- Social buttons row underneath -->
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/ohallett" target="_blank" class="social-button linkedin">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-button linkedin">
         <i class="fab fa-linkedin"></i> LinkedIn
       </a>
-      <a href="mailto:milchbluete@gmail.com" class="social-button email">
-        <i class="fas fa-envelope"></i> Email
+      <a href="mailto:youremail@gmail.com" class="social-button email">
+        <i class="fas fa-envelope"></i> Gmail
       </a>
-      <a href="https://t.me/oliviaehe" target="_blank" class="social-button telegram">
+      <a href="https://t.me/yourusername" target="_blank" class="social-button telegram">
         <i class="fab fa-telegram"></i> Telegram
       </a>
       <a href="https://yourportfolio.com" target="_blank" class="social-button portfolio">
@@ -70,7 +75,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Olivia Ehe. All rights reserved.</p>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
 </body>
 </html>
