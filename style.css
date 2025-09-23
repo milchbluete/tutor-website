@@ -9,13 +9,19 @@ body {
   line-height: 1.6;
 }
 
+/* Header with full hero image and readable text */
 header {
-  background: url('hero.jpg'); /* Removed transparent green layer */
+  background: url('hero.jpg') no-repeat center center;
   background-size: cover;
-  background-position: center;
   padding: 4rem 1rem;
   color: white;
   text-align: center;
+  position: relative;
+}
+
+/* Optional subtle text shadow for readability */
+header h1, header p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
