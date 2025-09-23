@@ -19,7 +19,6 @@ header {
   position: relative;
 }
 
-/* Optional subtle text shadow for readability */
 header h1, header p {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -122,6 +121,43 @@ form button:hover {
   background-color: #4a7c59;
 }
 
+/* Social link buttons */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.social-button i {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.social-button.linkedin { background-color: #0077B5; }
+.social-button.linkedin:hover { background-color: #005582; }
+
+.social-button.email { background-color: #D44638; }
+.social-button.email:hover { background-color: #A72C25; }
+
+.social-button.telegram { background-color: #0088cc; }
+.social-button.telegram:hover { background-color: #006699; }
+
+.social-button.portfolio { background-color: #355e3b; }
+.social-button.portfolio:hover { background-color: #4a7c59; }
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   header {
@@ -161,5 +197,10 @@ form button:hover {
 
   form button {
     width: 100%;
+  }
+
+  .social-button {
+    width: 100%;
+    justify-content: center;
   }
 }
