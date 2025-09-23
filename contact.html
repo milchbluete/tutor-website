@@ -3,56 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Private Tutor</title>
+  <title>Contact - Private Tutor</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+        integrity="sha512-RXf+QSDCUQs0Xh+0Xh6X5b1a0+1wq1/c2U2Jq9L1G5DkI3E5+nF1pB1fq5DpPj+szCW0VfJtO2VtJ7uHh+LgHg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!-- Navigation -->
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="subjects.html">Subjects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <!-- Hero Banner -->
   <header class="hero" style="background-image: url('images/contact-hero.jpg');">
-    <div class="hero-content">
-      <h1>Contact Me</h1>
-      <p>Let’s connect and start learning</p>
-    </div>
+    <h1>Contact Me</h1>
   </header>
 
   <!-- Main Content -->
   <main>
-    <section class="content-section">
-      <h2>Get in Touch</h2>
-      <p>You can reach me through the following platforms:</p>
+    <h2>Get in Touch</h2>
+    <p>If you’d like to learn more or schedule a lesson, please reach out!</p>
 
-      <div class="social-links">
-        <a href="https://linkedin.com" target="_blank" class="social-button linkedin">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="mailto:yourname@email.com" class="social-button email">
-          <i class="fas fa-envelope"></i> Email
-        </a>
-        <a href="https://t.me/yourusername" target="_blank" class="social-button telegram">
-          <i class="fab fa-telegram"></i> Telegram
-        </a>
-        <a href="https://yourportfolio.com" target="_blank" class="social-button portfolio">
-          <i class="fas fa-briefcase"></i> Portfolio
-        </a>
-      </div>
-    </section>
+    <!-- Example form -->
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- Social links -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-button linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="mailto:youremail@example.com" class="social-button email">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://t.me/yourusername" target="_blank" class="social-button telegram">
+        <i class="fab fa-telegram"></i> Telegram
+      </a>
+      <a href="https://yourportfolio.com" target="_blank" class="social-button portfolio">
+        <i class="fas fa-briefcase"></i> Portfolio
+      </a>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Private Tutor. All Rights Reserved.</p>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
