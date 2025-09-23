@@ -9,18 +9,19 @@ body {
   line-height: 1.6;
 }
 
-/* Header with full hero image and readable text */
+/* Header / Hero */
 header {
-  background: url('hero.jpg') no-repeat center center;
+  background: url('hero-tutoring.jpg') no-repeat center center;
   background-size: cover;
   padding: 4rem 1rem;
   color: white;
   text-align: center;
   position: relative;
+  min-height: 220px;
 }
 
 header h1, header p {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.45);
 }
 
 header h1 {
@@ -33,6 +34,7 @@ header p {
   font-size: 1.25rem;
 }
 
+/* Navigation */
 nav {
   background-color: #355e3b;
   display: flex;
@@ -55,6 +57,7 @@ nav a:hover {
   color: #d9f0e6;
 }
 
+/* Main content */
 main {
   padding: 2rem;
   max-width: 900px;
@@ -69,6 +72,7 @@ h1, h2 {
   color: #355e3b;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -78,6 +82,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Page images */
 .page-image {
   width: 100%;
   max-width: 600px;
@@ -94,7 +99,9 @@ footer {
   font-style: italic;
 }
 
-form input, form textarea {
+/* Forms */
+form input,
+form textarea {
   width: 100%;
   max-width: 500px;
   padding: 0.75rem;
@@ -112,16 +119,36 @@ form button {
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 999px; /* pill shape */
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
   background-color: #4a7c59;
+  transform: translateY(-2px);
 }
 
-/* Social link buttons */
+/* Contact page layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.contact-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Social links row */
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -131,21 +158,29 @@ form button:hover {
 }
 
 .social-button {
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  transition: background-color 0.3s ease;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 140px;
+}
+
+.social-button:hover {
+  transform: translateY(-2px);
 }
 
 .social-button i {
   margin-right: 0.5rem;
-  vertical-align: middle;
+  font-size: 1.2rem;
 }
 
+/* Platform colors */
 .social-button.linkedin { background-color: #0077B5; }
 .social-button.linkedin:hover { background-color: #005582; }
 
@@ -182,26 +217,24 @@ form button:hover {
     margin-top: 1rem;
   }
 
-  .page-image {
-    max-width: 100%;
-    margin: 1rem auto;
-  }
-
-  .page-image + p {
+  .contact-grid {
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
-  form input, form textarea {
-    max-width: 100%;
+  .contact-image {
+    margin-top: 2rem;
   }
 
-  form button {
-    width: 100%;
+  .social-links {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .social-button {
     width: 100%;
     justify-content: center;
+    font-size: 1.1rem;
+    padding: 1rem;
   }
 }
-
