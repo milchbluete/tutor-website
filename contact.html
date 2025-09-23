@@ -30,21 +30,29 @@
     <h2>Get in Touch</h2>
     <p>If you’d like to learn more or schedule a lesson, please reach out!</p>
 
-    <!-- Example form -->
-    <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+    <!-- Two-column layout -->
+    <div class="contact-grid">
+      <!-- Left: Form -->
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-      <button type="submit">Send</button>
-    </form>
+        <button type="submit">Send</button>
+      </form>
 
-    <!-- Social links -->
+      <!-- Right: Image -->
+      <div class="contact-image">
+        <img src="images/contact-profile.jpg" alt="Tutor profile" />
+      </div>
+    </div>
+
+    <!-- Social links row under both -->
     <div class="social-links">
       <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-button linkedin">
         <i class="fab fa-linkedin"></i> LinkedIn
@@ -66,4 +74,3 @@
   </footer>
 </body>
 </html>
-
