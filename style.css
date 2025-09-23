@@ -136,16 +136,7 @@ form button:hover {
   gap: 2rem;
   align-items: start;
   margin-top: 2rem;
-}
 
-.contact-image img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Social links row */
