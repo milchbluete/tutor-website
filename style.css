@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background: linear-gradient(rgba(53,94,59,0.8), rgba(53,94,59,0.8)), url('hero.jpg');
+  background: url('hero.jpg'); /* Removed transparent green layer */
   background-size: cover;
   background-position: center;
   padding: 4rem 1rem;
@@ -80,6 +80,13 @@ footer {
   margin: 1rem auto;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.page-image + p {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
 form input, form textarea {
@@ -107,4 +114,46 @@ form button {
 
 form button:hover {
   background-color: #4a7c59;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 3rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .page-image {
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  .page-image + p {
+    text-align: center;
+  }
+
+  form input, form textarea {
+    max-width: 100%;
+  }
+
+  form button {
+    width: 100%;
+  }
 }
