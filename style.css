@@ -1,0 +1,103 @@
+/* style.css with enhanced design */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(rgba(53,94,59,0.8), rgba(53,94,59,0.8)), url('https://source.unsplash.com/1600x400/?books,study');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.25rem;
+}
+
+nav {
+  background-color: #355e3b;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d9f0e6;
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+h1, h2 {
+  color: #355e3b;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #4a7c59;
+  color: white;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #355e3b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #4a7c59;
+}
