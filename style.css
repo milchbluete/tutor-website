@@ -448,7 +448,12 @@ details ul {
   .cal-embed { min-height: 560px; }
   .photo-pane img { max-height: 420px; }
 }
-
+.photo-pane img {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
   
 }
 
