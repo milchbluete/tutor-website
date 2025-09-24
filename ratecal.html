@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rates & Scheduling – Olivia Ehe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hero/Header -->
+  <header>
+    <h1>Rates & Scheduling</h1>
+    <p>Book a session that fits your goals and schedule</p>
+  </header>
+
+  <!-- Top navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="experience.html">Experience</a>
+    <a href="ratecal.html">Rates</a>
+    <a href="contact.html">Contact</a>
+    
+  </nav>
+
+  <!-- Main content card -->
+  <main>
+    <!-- Intro block -->
+    <section class="stack gap-md">
+      <h2>How it works</h2>
+      <p>
+        I offer flexible one-on-one tutoring in Art, Biology & Chemistry, Life, and Poetry.
+        Sessions can be online or in-person (where available). New students get a brief
+        consultation to tailor the plan.
+      </p>
+    </section>
+
+    <!-- Rates list -->
+    <section class="stack gap-sm">
+      <h3>Rates</h3>
+      <ul class="rates-list">
+        <li><strong>Intro call (15 min):</strong> Free</li>
+        <li><strong>60 min session:</strong> $75</li>
+        <li><strong>90 min deep dive:</strong> $110</li>
+        <li><strong>4-session pack (60 min each):</strong> $280 (save $20)</li>
+        <li><strong>Portfolio / lab report review:</strong> from $95 (flat rate, quote provided)</li>
+      </ul>
+      <p class="muted">Need sliding scale or small-group pricing? <a href="contact.html">Get in touch</a>.</p>
+    </section>
+
+    <!-- Scheduler + photo -->
+    <section class="rates-grid">
+      <!-- Calendly (inline embed) -->
+      <div class="card">
+        <h3>Book a time</h3>
+        <!-- Option A: simple iframe (works without extra JS) -->
+        <div class="cal-embed">
+          <iframe
+            src="https://calendly.com/YOUR-USERNAME/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+            title="Schedule with Olivia"
+            frameborder="0"
+            loading="lazy"
+            allowtransparency="true">
+          </iframe>
+        </div>
+
+        <!-- Option B: (commented) official widget script
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/YOUR-USERNAME/30min?hide_gdpr_banner=1"
+             style="min-width:320px;height:720px;"></div>
+        <script type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        -->
+      </div>
+
+      <!-- Photo / visual -->
+      <aside class="card photo-pane">
+        <img src="rates.jpg" alt="Tutoring session" />
+        <div class="caption">
+          Sessions are tailored to your pace, interests, and goals.
+        </div>
+      </aside>
+    </section>
+
+    <!-- (Optional) FAQ -->
+    <section class="stack gap-sm">
+      <details>
+        <summary><strong>What should I bring to a session?</strong></summary>
+        <p>Any assignments, notes, rubrics, or questions you have; for art, bring materials you enjoy.</p>
+      </details>
+      <details>
+        <summary><strong>What’s the cancellation policy?</strong></summary>
+        <p>Free to reschedule more than 24 hours in advance. Within 24 hours, 50% fee may apply.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Olivia Ehe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
