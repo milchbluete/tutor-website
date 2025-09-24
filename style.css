@@ -487,6 +487,46 @@ details ul {
   overflow: hidden;
 }
 
-  
+  /* === Rates two-column layout (force grid) === */
+.rates-two-col {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.25rem 0 1.75rem;
+}
+
+/* Allow content (like Calendly) to shrink instead of breaking the grid */
+.rates-two-col > .rates-col { min-width: 0; }
+
+/* Calendly widget sizing: keep it inside the column */
+.calendly-inline-widget {
+  width: 100% !important;
+  min-height: 1000px;  /* tweak to taste */
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Fallback if grid were ever unsupported */
+@supports not (display: grid) {
+  .rates-two-col { 
+    display: flex !important; 
+    flex-wrap: wrap; 
+    gap: 1.5rem; 
+  }
+  .rates-two-col .rates-col { 
+    flex: 1 1 320px; 
+    min-width: 0; 
+  }
+}
+
+/* Mobile: stack columns */
+@media (max-width: 900px) {
+  .rates-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
 }
 
