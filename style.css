@@ -448,12 +448,45 @@ details ul {
   .cal-embed { min-height: 560px; }
   .photo-pane img { max-height: 420px; }
 }
+/* Rates photo block */
+.photo-pane {
+  padding: 0;               /* image edge-to-edge inside the card */
+  border-radius: 12px;      /* match your card rounding */
+  overflow: hidden;         /* clip image corners */
+  height: 100%;             /* lets image match the grid row height */
+}
+
 .photo-pane img {
   display: block;
   width: 100%;
-  min-width: 100%;
-  object-fit: cover;
+  height: 100%;             /* fill the column height */
+  object-fit: cover;        /* crop neatly instead of stretching */
 }
+
+.photo-pane .caption {
+  padding: 0.75rem 1rem;
+  background: #f7f7f7;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Make sure the grid stretches both columns to equal height */
+.rates-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;  /* or 1fr 1fr if you want equal widths */
+  gap: 1.25rem;
+  align-items: stretch;               /* key for equal heights */
+}
+
+/* If you’re using the JS Calendly widget, give it a solid height */
+.calendly-inline-widget {
+  width: 100%;
+  min-height: 1000px;                 /* adjust as you like */
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
   
 }
 
