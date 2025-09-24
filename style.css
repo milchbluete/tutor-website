@@ -173,102 +173,8 @@ form button:hover {
 .social-button.portfolio { background: var(--green); }
 .social-button.portfolio:hover { background: var(--green-2); }
 
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: var(--green-2);
-  color: #fff;
-  font-size: .9rem;
-  margin-top: 3rem;
-}
-
-/* ===== Mobile ===== */
-@media (max-width: 768px) {
-  header { padding: 3rem 1rem; }
-  header h1 { font-size: 2rem; }
-  header p { font-size: 1rem; }
-
-  nav { flex-direction: column; gap: 1rem; }
-
-  main { padding: 1rem; margin-top: 1rem; }
-
-  .contact-grid { grid-template-columns: 1fr; }
-  .contact-image img { height: 260px; } /* nice fixed height on phones */
-
-  .social-links {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .social-button {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.05rem;
-  }
-  /* Contact grid: 2 columns, equal height */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: stretch;   /* makes both columns equal height */
-  margin-top: 1.5rem;
-}
-.contact-grid > * { height: 100%; }
-
-/* Image column */
-.contact-image {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;       /* clip child corners */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.contact-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* fill column, match form height without distortion */
-  display: block;
-}
-
-/* Social buttons row (if not already present) */
-.social-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-.social-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  border-radius: 999px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  min-width: 140px;
-  transition: background-color .3s ease, transform .2s ease;
-}
-.social-button i { margin-right: .5rem; font-size: 1.2rem; }
-
-.social-button.linkedin { background: #0077B5; }
-.social-button.linkedin:hover { background: #005582; }
-.social-button.email { background: #D44638; }
-.social-button.email:hover { background: #A72C25; }
-.social-button.telegram { background: #0088cc; }
-.social-button.telegram:hover { background: #006699; }
-.social-button.portfolio { background: #355e3b; }
-.social-button.portfolio:hover { background: #4a7c59; }
-
-/* Mobile: stack cols and give image a nice fixed height */
-@media (max-width: 768px) {
-  .contact-grid { grid-template-columns: 1fr; }
-  .contact-image img { height: 260px; }
-}
 /* ===== Subjects page: media intro ===== */
-.intro-media {
-  margin: 0 0 1.5rem 0;
-}
+.intro-media { margin: 0 0 1.5rem 0; }
 .intro-media video {
   width: 100%;
   border-radius: 8px;
@@ -296,8 +202,6 @@ footer {
   grid-template-columns: repeat(12, 1fr);
   gap: 1.25rem;
 }
-
-/* Each card spans 6/12 on desktop, 12/12 on mobile */
 .subject-card {
   grid-column: span 6;
   background: #fff;
@@ -312,16 +216,12 @@ footer {
   transform: translateY(-4px);
   box-shadow: 0 8px 18px rgba(0,0,0,.12);
 }
-
-/* Subject card image */
 .subject-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: block;
 }
-
-/* Card body */
 .subject-body {
   padding: 1rem 1.1rem 1.25rem;
 }
@@ -329,8 +229,6 @@ footer {
   margin: 0 0 .5rem 0;
   color: var(--green);
 }
-
-/* Chips (topic tags) */
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -345,8 +243,6 @@ footer {
   font-size: .85rem;
   font-weight: 700;
 }
-
-/* Expandable syllabus (native details/summary) */
 details {
   border: 1px solid #e6e6e6;
   border-radius: 8px;
@@ -356,33 +252,17 @@ details summary {
   cursor: pointer;
   font-weight: 700;
   color: var(--green);
-  list-style: none; /* removes default arrow in some browsers */
+  list-style: none;
 }
-details[open] {
-  background: #fafafa;
-}
-details ul {
-  margin: .75rem 0 0 1rem;
-}
+details[open] { background: #fafafa; }
+details ul { margin: .75rem 0 0 1rem; }
 
-/* Motion preferences respected */
-@media (prefers-reduced-motion: reduce) {
-  .subject-card { transition: none; }
-  .subject-card:hover { transform: none; }
-}
-
-/* Responsive grid */
-@media (max-width: 900px) {
-  .subject-card { grid-column: span 12; }
-  .subject-card img { height: 200px; }
-}
-/* Utilities */
+/* ===== Rates page ===== */
 .stack > * + * { margin-top: 0.75rem; }
 .stack.gap-sm > * + * { margin-top: 0.5rem; }
 .stack.gap-md > * + * { margin-top: 1rem; }
 .muted { color: #666; font-size: 0.95rem; }
 
-/* Cards */
 .card {
   background: #fff;
   border-radius: 12px;
@@ -390,143 +270,72 @@ details ul {
   padding: 1rem;
 }
 
-/* Rates list */
-.rates-list {
-  margin: 0.25rem 0 0.25rem 1.1rem;
-}
-.rates-list li { margin: 0.35rem 0; }
-
-/* Rates grid: scheduler + photo */
+/* (Old rates-grid kept if you use it elsewhere) */
 .rates-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr; /* calendar bigger */
+  grid-template-columns: 1.4fr 1fr;
   gap: 1.25rem;
   margin-top: 1.25rem;
   align-items: start;
 }
 
-/* Calendly iframe wrapper keeps aspect/height responsive */
-.cal-embed {
-  position: relative;
-  width: 100%;
-  min-height: 640px; /* good default height */
-  border-radius: 8px;
-  overflow: hidden;
-}
-.cal-embed iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Photo pane */
-.photo-pane {
-  padding: 0; /* image edge-to-edge */
-  overflow: hidden;
-}
-.photo-pane img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-height: 640px;
-  object-fit: cover;
-}
-.photo-pane .caption {
-  padding: 0.75rem 1rem;
-  font-size: 0.95rem;
-  color: #333;
-  background: #f7f7f7;
-}
-
-/* Mobile */
-@media (max-width: 900px) {
-  .rates-grid {
-    grid-template-columns: 1fr; /* stack */
-  }
-  .cal-embed { min-height: 560px; }
-  .photo-pane img { max-height: 420px; }
-}
-/* Rates photo block */
-.photo-pane {
-  padding: 0;               /* image edge-to-edge inside the card */
-  border-radius: 12px;      /* match your card rounding */
-  overflow: hidden;         /* clip image corners */
-  height: 100%;             /* lets image match the grid row height */
-}
-
-.photo-pane img {
-  display: block;
-  width: 100%;
-  height: 100%;             /* fill the column height */
-  object-fit: cover;        /* crop neatly instead of stretching */
-}
-
-.photo-pane .caption {
-  padding: 0.75rem 1rem;
-  background: #f7f7f7;
-  font-size: 0.95rem;
-  color: #333;
-}
-
-/* Make sure the grid stretches both columns to equal height */
-.rates-grid {
+/* NEW: two-column layout you’re using now */
+.rates-two-col{
   display: grid;
-  grid-template-columns: 1.4fr 1fr;  /* or 1fr 1fr if you want equal widths */
-  gap: 1.25rem;
-  align-items: stretch;               /* key for equal heights */
-}
-
-/* If you’re using the JS Calendly widget, give it a solid height */
-.calendly-inline-widget {
-  width: 100%;
-  min-height: 1000px;                 /* adjust as you like */
-  border: 0;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-  /* === Rates two-column layout (force grid) === */
-.rates-two-col {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
   gap: 1.5rem;
   align-items: start;
   margin: 1.25rem 0 1.75rem;
 }
-
-/* Allow content (like Calendly) to shrink instead of breaking the grid */
 .rates-two-col > .rates-col { min-width: 0; }
 
-/* Calendly widget sizing: keep it inside the column */
 .calendly-inline-widget {
-  width: 100% !important;
-  min-height: 1000px;  /* tweak to taste */
+  width: 100%;
+  min-height: 1000px;
   border: 0;
   border-radius: 12px;
   overflow: hidden;
 }
 
-/* Fallback if grid were ever unsupported */
-@supports not (display: grid) {
-  .rates-two-col { 
-    display: flex !important; 
-    flex-wrap: wrap; 
-    gap: 1.5rem; 
-  }
-  .rates-two-col .rates-col { 
-    flex: 1 1 320px; 
-    min-width: 0; 
-  }
+/* Photo pane (if you add one on Rates) */
+.photo-pane { padding: 0; border-radius: 12px; overflow: hidden; height: 100%; }
+.photo-pane img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.photo-pane .caption {
+  padding: 0.75rem 1rem; background: #f7f7f7; font-size: 0.95rem; color: #333;
 }
 
-/* Mobile: stack columns */
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--green-2);
+  color: #fff;
+  font-size: .9rem;
+  margin-top: 3rem;
+}
+
+/* ===== Mobile ===== */
 @media (max-width: 900px) {
-  .rates-two-col {
-    grid-template-columns: 1fr;
-  }
+  .subject-card { grid-column: span 12; }
+  .subject-card img { height: 200px; }
+  .rates-grid { grid-template-columns: 1fr; }
+  .cal-embed { min-height: 560px; }
+  .photo-pane img { max-height: 420px; }
+  .rates-two-col { grid-template-columns: 1fr; }
 }
 
-}
+@media (max-width: 768px) {
+  header { padding: 3rem 1rem; }
+  header h1 { font-size: 2rem; }
+  header p { font-size: 1rem; }
 
+  nav { flex-direction: column; gap: 1rem; }
+
+  main { padding: 1rem; margin-top: 1rem; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-image img { height: 260px; }
+
+  .social-links { flex-direction: column; align-items: stretch; }
+  .social-button { width: 100%; padding: 1rem; font-size: 1.05rem; }
+}
