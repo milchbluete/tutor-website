@@ -1,16 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subjects - Olivia Ehe</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subjects – Olivia Ehe</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Hero/Header (inherits your global header styles) -->
   <header>
     <h1>Subjects</h1>
+    <p>Art • Biology & Chemistry • Life • Poetry</p>
   </header>
+
+  <!-- Top navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
@@ -18,15 +21,126 @@
     <a href="experience.html">Experience</a>
     <a href="contact.html">Contact</a>
   </nav>
+
   <main>
-    <h2>What I Teach</h2>
-    <ul>
-      <li><strong>Biology:</strong> from basics to advanced topics, lab work, and exam prep.</li>
-      <li><strong>Chemistry:</strong> clear explanations of concepts, practical applications, and study strategies.</li>
-      <li><strong>Art:</strong> drawing, painting, and creative exploration for all skill levels.</li>
-      <li><strong>Poetry:</strong> reading, writing, and discovering your creative voice.</li>
-    </ul>
+    <!-- Optional video intro (use your own file or YouTube) -->
+    <section class="intro-media">
+      <!-- Option A: Local/hosted MP4 in the same folder -->
+      <!--
+      <video controls playsinline poster="subjects-poster.jpg">
+        <source src="subjects-intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      -->
+
+      <!-- Option B: YouTube embed (replace the src with your link) -->
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Tutoring Overview"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Subjects Grid -->
+    <section>
+      <h2>What I Teach</h2>
+
+      <div class="subjects-grid">
+        <!-- Biology & Chemistry -->
+        <article class="subject-card">
+          <img src="biology-chemistry.jpg" alt="Biology and chemistry tutoring with lab experiments and exam preparation" />
+          <div class="subject-body">
+            <h3>Biology &amp; Chemistry</h3>
+            <p>From cell biology to stoichiometry, I build strong fundamentals and exam confidence.</p>
+            <div class="chips">
+              <span class="chip">Exam Prep</span>
+              <span class="chip">Lab Skills</span>
+              <span class="chip">Concept Maps</span>
+            </div>
+            <details>
+              <summary>Syllabus highlights</summary>
+              <ul>
+                <li>Biology: Cells, genetics, human systems, ecology</li>
+                <li>Chemistry: Atomic structure, bonding, reactions, thermodynamics</li>
+                <li>Practice: Problem sets, lab report coaching, spaced repetition</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Life -->
+        <article class="subject-card">
+          <img src="life-sciences.jpg" alt="Life sciences tutoring with experiments and real-world applications" />
+          <div class="subject-body">
+            <h3>Life</h3>
+            <p>Explore living systems: evolution, ecology, and how science connects to everyday life.</p>
+            <div class="chips">
+              <span class="chip">Ecology</span>
+              <span class="chip">Evolution</span>
+              <span class="chip">Field Notes</span>
+            </div>
+            <details>
+              <summary>Syllabus highlights</summary>
+              <ul>
+                <li>Population dynamics &amp; ecosystems</li>
+                <li>Adaptation &amp; biodiversity</li>
+                <li>Hands-on mini-investigations &amp; data storytelling</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Art -->
+        <article class="subject-card">
+          <img src="art-tutoring.jpg" alt="Art tutoring and creative expression lessons" />
+          <div class="subject-body">
+            <h3>Art</h3>
+            <p>Develop technique and voice through drawing, painting, and concept studies.</p>
+            <div class="chips">
+              <span class="chip">Sketching</span>
+              <span class="chip">Color</span>
+              <span class="chip">Portfolio</span>
+            </div>
+            <details>
+              <summary>Syllabus highlights</summary>
+              <ul>
+                <li>Foundations: line, value, composition</li>
+                <li>Media: graphite, ink, watercolor, acrylic</li>
+                <li>Critique &amp; portfolio reviews</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Poetry -->
+        <article class="subject-card">
+          <img src="poetry-tutoring.jpg" alt="Poetry tutoring and creative writing lessons" />
+          <div class="subject-body">
+            <h3>Poetry</h3>
+            <p>Read closely, write boldly. We’ll play with form, imagery, and revision.</p>
+            <div class="chips">
+              <span class="chip">Forms</span>
+              <span class="chip">Voice</span>
+              <span class="chip">Workshop</span>
+            </div>
+            <details>
+              <summary>Syllabus highlights</summary>
+              <ul>
+                <li>Reading strategies &amp; close analysis</li>
+                <li>Drafting, feedback, revision cycles</li>
+                <li>Submission guidance &amp; readings</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Olivia Ehe. All rights reserved.</p>
   </footer>
